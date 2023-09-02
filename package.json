@@ -1,0 +1,13 @@
+{
+  "name": "nedieyassin",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "tailwindbuild": "npx tailwindcss -i ./input.css -o ./style/main.css --watch"
+  },
+  "author": "Yassin Nedie",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

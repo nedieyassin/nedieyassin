@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .button-border {
+        @apply after:border-black after:z-0 after:absolute   after:-left-2 after:-top-2 after:w-6 after:h-6  after:border-t-2 after:border-l-2 before:border-black before:z-0 before:absolute   before:-right-2 before:-bottom-2 before:w-6 before:h-6  before:border-b-2 before:border-r-2;
+    }
+}
+
