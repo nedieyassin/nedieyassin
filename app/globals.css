@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .glass {
+    background-image: radial-gradient(
+            rgba(255, 255, 255, .8) 1px,
+            white 1px
+    );
+    background-size: 4px 4px;
+    backdrop-filter: blur(6px);
+  }
+}
