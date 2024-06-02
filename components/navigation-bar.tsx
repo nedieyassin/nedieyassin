@@ -1,4 +1,5 @@
 import Link from "next/link";
+import {AlignRight} from "lucide-react";
 
 export function NavigationBar() {
     return (
@@ -7,6 +8,9 @@ export function NavigationBar() {
                 <div>
                     <h1 className="font-normal">Nedie Yassin</h1>
                 </div>
+                <button className="lg:hidden">
+                    <AlignRight />
+                </button>
                 <div className="hidden lg:block px-8">
                     <nav>
                         <ul className="flex items-center gap-6">
