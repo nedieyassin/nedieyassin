@@ -1,28 +1,13 @@
 'use client'
 
 import Link from "next/link";
-import {DatabaseZap, LaptopMinimal, ServerCog} from "lucide-react";
-import {useState} from "react";
-import {cn} from "@/lib/utils";
-import {motion} from "framer-motion";
+import ExpertiseSection from "@/components/expertise-section";
+import EducationSection from "@/components/education-section";
+import ExperienceSection from "@/components/experience-section";
+import ProjectsSection from "@/components/projects-section";
+import ContactSection from "@/components/contact-section";
 
 export default function Home() {
-    const [currentExpertise, setCurrentExpertise] = useState(0)
-    const expertise = [
-        {
-            title: 'Front-end Development',
-            description: 'Specializing in front-end development, I meticulously design and build user interfaces that captivate and engage. Leveraging the latest technologies and best practices, I ensure seamless functionality across devices and browsers, delivering intuitive experiences that leave a lasting impression.'
-        },
-        {
-            title: 'Back-end Development',
-            description: 'In back-end development, I architect robust systems that power seamless user experiences. From database management to server-side logic, I ensure the backbone of your application operates efficiently and securely. With a focus on scalability and performance, I craft solutions that evolve with your business needs.'
-        },
-        {
-            title: 'Database',
-            description: 'In database management, I design and optimize data structures that form the foundation of your application. From relational databases to NoSQL solutions, I implement efficient storage and retrieval mechanisms to ensure data integrity and performance. With a keen eye for scalability and security, I build resilient database architectures that support your application\'s growth and reliability.'
-        },
-    ]
-
 
     return (
         <main className="pt-16 ">
@@ -48,11 +33,16 @@ export default function Home() {
 
                         <div className="space-y-6 lg:space-y-16">
                             <h1 className="font-bold text-3xl text-slate-800 leading-relaxed">
-                                Crafting seamless digital
+                                I develop digital
                                 experiences, from front-end finesse to back-end brilliance.
                             </h1>
                             <div className="pb-10 lg:pb-0">
-                                <Link href={"/"}
+                                <Link href={"#contact"}
+                                      onClick={(e) => {
+                                          e.preventDefault()
+                                          const page = document.getElementById('contact');
+                                          page?.scrollIntoView({behavior: 'smooth', block: 'start'});
+                                      }}
                                       className="block text-center  max-w-full lg:max-w-max w-auto bg-primary-500 text-white px-6 py-3 rounded-lg hover:bg-primary-600 text-lg">
                                     Let's get in touch
                                 </Link>
@@ -80,12 +70,12 @@ export default function Home() {
                         </svg>
                         <div
                             className="absolute -top-16 lg:-top-10 right-0 lg:right-10  bg-sky-200  px-4 py-2 rounded-md shadow-lg">
-                            <div className="font-normal">Front-end Development</div>
+                            <div className="font-normal">Frontend Development</div>
                             <p className="text-sm">React, Tailwind, Typescript and more</p>
                         </div>
                         <div
                             className="absolute bottom-14 lg:bottom-28 left-0  bg-orange-200  px-4 py-2 rounded-md shadow-lg">
-                            <div className="font-normal">Back-end Development</div>
+                            <div className="font-normal">Backend Development</div>
                             <p className="text-sm">Express, Golang, FastAPI and more</p>
                         </div>
                         <div
@@ -97,61 +87,11 @@ export default function Home() {
                 </div>
             </div>
             {/*   */}
-            <div className="w-full bg-primary-50">
-                <div className="container py-16">
-                    <h1 className="text-5xl text-slate-800">Expertise</h1>
-                    <div className="grid lg:grid-cols-2 lg:gap-10">
-                        <div className="py-6 space-y-1">
-                            <div className="relative">
-                                <button
-                                    onClick={() => setCurrentExpertise(0)}
-                                    className={cn("relative z-10 w-full border border-transparent  transition-all hover:text-sky-500 cursor-pointer rounded flex items-center gap-6 px-6 py-6", currentExpertise === 0 && "bg-white border-primary-500")}>
-                                    <LaptopMinimal className="text-sky-500" strokeWidth={0.9} size={32}/>
-                                    <span className="text-xl font-normal">Front-end Development</span>
-                                </button>
-                                {currentExpertise === 0 &&
-                                    <motion.div
-                                        className="h-24 w-24 -top-4 z-[0] -left-8  rounded-full bg-sky-100 absolute"
-                                        layoutId="underline"/>}
-                            </div>
-                            <div className="relative">
-                                <button
-                                    onClick={() => setCurrentExpertise(1)}
-                                    className={cn("relative z-10 w-full border border-transparent  transition-all hover:text-orange-500 cursor-pointer rounded flex items-center gap-6 px-6 py-6", currentExpertise === 1 && "bg-white border-primary-500")}>
-                                    <ServerCog className="text-orange-500" strokeWidth={0.9} size={32}/>
-                                    <span className="text-xl font-normal">Back-end Development</span>
-                                </button>
-                                {currentExpertise === 1 &&
-                                    <motion.div
-                                        className="h-24 w-24 -top-4 z-[0] -left-8  rounded-full bg-orange-100 absolute"
-                                        layoutId="underline"/>}
-                            </div>
-                            <div className="relative">
-                                <button
-                                    onClick={() => setCurrentExpertise(2)}
-                                    className={cn("relative z-10 w-full border border-transparent  transition-all hover:text-red-500 cursor-pointer rounded flex items-center gap-6 px-6 py-6", currentExpertise === 2 && "bg-white border-primary-500")}>
-                                    <DatabaseZap className="text-red-500" strokeWidth={0.9} size={32}/>
-                                    <span className="text-xl font-normal">Databases</span>
-                                </button>
-                                {currentExpertise === 2 &&
-                                    <motion.div
-                                        className="h-24 w-24 -top-4 z-[0] -left-8  rounded-full bg-red-100 absolute"
-                                        layoutId="underline"/>}
-                            </div>
-                        </div>
-                        <div className="py-3 space-y-6">
-                            <h1 className="font-normal text-4xl">{expertise[currentExpertise].title}</h1>
-                            <p>
-                                {expertise[currentExpertise].description}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/*    */}
-            <div className="h-screen">
-
-            </div>
+            <ExpertiseSection/>
+            <EducationSection/>
+            <ExperienceSection/>
+            <ProjectsSection/>
+            <ContactSection/>
         </main>
     );
 }

@@ -7,13 +7,25 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 
-export const useDimensions = (ref: any) => {
-    const dimensions = useRef({width: 0, height: 0});
+export const useOutsideClick = (callback: () => void) => {
+    const ref = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        dimensions.current.width = ref.current.offsetWidth;
-        dimensions.current.height = ref.current.offsetHeight;
-    }, []);
+        const handleClickOutside = (event: MouseEvent | TouchEvent) => {
+            if (ref.current && !ref.current.contains(event.target as Node)) {
+                callback();
+            }
+        };
 
-    return dimensions.current;
+        document.addEventListener('mouseup', handleClickOutside);
+        document.addEventListener('touchend', handleClickOutside);
+
+
+        return () => {
+            document.removeEventListener('mouseup', handleClickOutside);
+            document.removeEventListener('touchend', handleClickOutside);
+        };
+    }, [callback]);
+
+    return ref;
 };

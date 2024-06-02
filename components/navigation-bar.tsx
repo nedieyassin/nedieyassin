@@ -1,29 +1,31 @@
 'use client'
 
 import Link from "next/link";
-import {AlignRight} from "lucide-react";
 import {motion, useCycle} from "framer-motion";
+import Scrollspy from 'react-scrollspy'
+import {useOutsideClick} from "@/lib/utils";
+import {useEffect} from "react";
 
 const menus = [
     {
         title: 'Expertise',
-        href: '/'
+        href: '#expertise'
     },
     {
         title: 'Education',
-        href: '/'
+        href: '#education'
     },
     {
         title: 'Experience',
-        href: '/'
+        href: '#experience'
     },
     {
         title: 'Projects',
-        href: '/'
+        href: '#projects'
     },
     {
         title: 'Contact',
-        href: '/'
+        href: '#contact'
     },
 
 ]
@@ -40,15 +42,30 @@ const Path = (props: any) => (
 
 export function NavigationBar() {
     const [isOpen, toggleOpen] = useCycle(false, true);
+    const ref = useOutsideClick(() => {
+        if (isOpen) {
+            toggleOpen();
+        }
+    });
+
+    useEffect(() => {
+        if (isOpen) {
+            document.body.className += ' overflow-clip lg:overflow-auto';
+        } else {
+            document.body.className = document.body.className.replaceAll(' overflow-clip lg:overflow-auto', '');
+        }
+    }, [isOpen]);
 
     return (
         <div className="fixed z-50 left-0 top-0 flex items-center w-full h-16 glass">
             <div className="container mx-auto flex items-center justify-between">
-                <div>
-                    <h1 className="font-normal">Nedie Yassin</h1>
-                </div>
+                <Link href="/" className="">
+                    <h1 className="font-normal">NEDIE YASS<span className="text-primary-500">IN</span></h1>
+                </Link>
                 <div className="lg:hidden">
-                    <motion.div animate={isOpen ? "open" : "closed"}
+                    <motion.div
+                        ref={ref}
+                        animate={isOpen ? "open" : "closed"}
                                 className="flex items-center justify-center relative">
                         <button onClick={() => toggleOpen()}>
                             <svg width="23" height="23" viewBox="0 0 23 23">
@@ -96,6 +113,7 @@ export function NavigationBar() {
                                 className="flex flex-col gap-4">
                                 {menus.map((menu, index) => (
                                     <motion.div
+                                        key={menu.title}
                                         variants={{
                                             open: {
                                                 y: 0,
@@ -108,9 +126,14 @@ export function NavigationBar() {
                                         }}
                                     >
                                         <Link
-                                            key={index}
                                             href={menu.href}
-                                            className="hover:text-blue-500 transition-all"
+                                            onClick={(e) => {
+                                                e.preventDefault()
+                                                const page = document.getElementById(menu.href.replaceAll('#', ''));
+                                                page?.scrollIntoView({behavior: 'smooth', block: 'start'});
+                                                toggleOpen()
+                                            }}
+                                            className="hover:text-primary-500 transition-all"
                                         >
                                             {menu.title}
                                         </Link>
@@ -122,13 +145,25 @@ export function NavigationBar() {
                 </div>
                 <div className="hidden lg:block px-8">
                     <nav>
-                        <ul className="flex items-center gap-6">
-                            <li><Link className="hover:text-blue-500 transition-all" href={'/'}>Expertise</Link></li>
-                            <li><Link className="hover:text-blue-500 transition-all" href={'/'}>Education</Link></li>
-                            <li><Link className="hover:text-blue-500 transition-all" href={'/'}>Experience</Link></li>
-                            <li><Link className="hover:text-blue-500 transition-all" href={'/'}>Projects</Link></li>
-                            <li><Link className="hover:text-blue-500 transition-all" href={'/'}>Contact</Link></li>
-                        </ul>
+                        <Scrollspy items={['expertise', 'education', 'experience', 'projects', 'contact']}
+                                   style={{display: 'flex', gap: '1.5rem', alignItems: 'center'}}
+                                   currentClassName="text-primary-500">
+                            {menus.map((menu, index) => (
+                                <li key={menu.title}>
+                                    <Link
+                                        href={menu.href}
+                                        onClick={(e) => {
+                                            e.preventDefault()
+                                            const page = document.getElementById(menu.href.replaceAll('#', ''));
+                                            page?.scrollIntoView({behavior: 'smooth', block: 'start'});
+                                        }}
+                                        className="hover:text-primary-500 transition-all"
+                                    >
+                                        {menu.title}
+                                    </Link>
+                                </li>
+                            ))}
+                        </Scrollspy>
                     </nav>
                 </div>
             </div>
