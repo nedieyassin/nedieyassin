@@ -32,16 +32,16 @@ export default function ExpertiseSection() {
                 <h1 className="text-5xl text-slate-800">Expertise</h1>
                 <div>
                     <div className="grid lg:grid-cols-3 gap-6">
-                        <div className="space-y-2 bg-white p-6">
+                        <div className="space-y-2 bg-white p-6 border border-black/90">
                             <h1 className="text-xl font-bold text-slate-800">Website Development </h1>
                             <p>Craft visually stunning and functional websites that elevate your online presence.</p>
                         </div>
-                        <div className="space-y-2 bg-white p-6">
+                        <div className="space-y-2 bg-white p-6 border border-black/90">
                             <h1 className="text-xl font-bold text-slate-800">Web Application Development </h1>
                             <p>Build dynamic web applications tailored to your business needs for enhanced
                                 efficiency.</p>
                         </div>
-                        <div className="space-y-2 bg-white p-6">
+                        <div className="space-y-2 bg-white p-6 border border-black/90">
                             <h1 className="text-xl font-bold text-slate-800">Custom Web Solutions </h1>
                             <p>Tailored websites and web applications designed to meet your unique requirements and
                                 objectives.</p>
@@ -78,13 +78,13 @@ export default function ExpertiseSection() {
                             <div className="relative">
                                 <button
                                     onClick={() => setCurrentExpertise(2)}
-                                    className={cn("relative z-10 w-full border border-transparent  transition-all hover:text-red-500 cursor-pointer rounded flex items-center gap-6 px-6 py-6", currentExpertise === 2 && "bg-white border-primary-500")}>
-                                    <DatabaseZap className="text-red-500" strokeWidth={0.9} size={32}/>
+                                    className={cn("relative z-10 w-full border border-transparent  transition-all hover:text-primary-500 cursor-pointer rounded flex items-center gap-6 px-6 py-6", currentExpertise === 2 && "bg-white border-primary-500")}>
+                                    <DatabaseZap className="text-primary-500" strokeWidth={0.9} size={32}/>
                                     <span className="text-xl font-normal">Databases</span>
                                 </button>
                                 {currentExpertise === 2 &&
                                     <motion.div
-                                        className="h-24 w-24 -top-4 z-[0] -left-8  rounded-full bg-red-100 absolute"
+                                        className="h-24 w-24 -top-4 z-[0] -left-8  rounded-full bg-primary-100 absolute"
                                         layoutId="underline"/>}
                             </div>
                         </div>
@@ -116,7 +116,7 @@ export default function ExpertiseSection() {
                                   const page = document.getElementById('contact');
                                   page?.scrollIntoView({behavior: 'smooth', block: 'start'});
                               }}
-                              className="block text-center  max-w-full lg:max-w-max w-auto bg-primary-500 text-white px-6 py-3 rounded-lg hover:bg-primary-600 text-lg">
+                              className="block text-center  max-w-full lg:max-w-max w-auto bg-primary-500 text-black px-6 py-3 rounded-lg hover:bg-primary-400 text-lg transition-all">
                             Let's get in touch
                         </Link>
                     </div>

@@ -19,7 +19,7 @@ export default function ContactSection() {
 
                     {/**/}
                     <Link href="mailto:yassinnedie9121@gmail.com" target="_blank"
-                          className="group flex gap-x-3 border-2 border-primary-300 p-4 rounded-2xl">
+                          className="group flex gap-x-3 border-2 border-primary-700 p-4 rounded-2xl">
                         <div
                             className="bg-white flex items-center justify-center h-14 aspect-square p-3 rounded-md max-w-max text-primary-900">
                             <MailCheck size={26}/>
@@ -31,7 +31,7 @@ export default function ContactSection() {
                     </Link>
                     {/**/}
                     <Link href="https://github.com/nedieyassin" target="_blank"
-                          className="group flex gap-x-3 border-2 border-primary-300 p-4 rounded-2xl">
+                          className="group flex gap-x-3 border-2 border-primary-700 p-4 rounded-2xl">
                         <div
                             className="bg-white flex items-center justify-center h-14 aspect-square p-3 rounded-md max-w-max text-primary-900">
                             <Github size={26}/>
@@ -43,7 +43,7 @@ export default function ContactSection() {
                     </Link>
                     {/**/}
                     <Link href="https://www.linkedin.com/in/yassin-nedie" target="_blank"
-                          className="group flex gap-x-3 border-2 border-primary-300 p-4 rounded-2xl">
+                          className="group flex gap-x-3 border-2 border-primary-700 p-4 rounded-2xl">
                         <div
                             className="bg-white flex items-center justify-center h-14 aspect-square p-3 rounded-md max-w-max text-primary-900">
                             <Linkedin size={26}/>
@@ -55,7 +55,7 @@ export default function ContactSection() {
                     </Link>
                     {/**/}
                     <Link href="https://wa.me/265998046884" target="_blank"
-                          className="group flex gap-x-3 border-2 border-primary-300 p-4 rounded-2xl">
+                          className="group flex gap-x-3 border-2 border-primary-700 p-4 rounded-2xl">
                         <div
                             className="bg-white flex items-center justify-center h-14 aspect-square p-3 rounded-md max-w-max text-primary-900">
                             <PhoneCall size={26}/>

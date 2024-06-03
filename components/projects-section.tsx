@@ -137,7 +137,7 @@ export default function ProjectsSection() {
                                     ))}
                                 </ul>
                                 {item.url && (
-                                    <a href={item.url} target="_blank" className="inline-block text-primary-500">
+                                    <a href={item.url} target="_blank" className="inline-block font-normal text-primary-900 underline">
                                         Visit project
                                     </a>
                                 )}

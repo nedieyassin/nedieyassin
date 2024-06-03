@@ -157,7 +157,7 @@ export function NavigationBar() {
                                             const page = document.getElementById(menu.href.replaceAll('#', ''));
                                             page?.scrollIntoView({behavior: 'smooth', block: 'start'});
                                         }}
-                                        className="hover:text-primary-500 transition-all"
+                                        className="hover:text-primary-500 transition-all font-normal"
                                     >
                                         {menu.title}
                                     </Link>

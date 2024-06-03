@@ -43,7 +43,7 @@ export default function Home() {
                                           const page = document.getElementById('contact');
                                           page?.scrollIntoView({behavior: 'smooth', block: 'start'});
                                       }}
-                                      className="block text-center  max-w-full lg:max-w-max w-auto bg-primary-500 text-white px-6 py-3 rounded-lg hover:bg-primary-600 text-lg">
+                                      className="block text-center  max-w-full lg:max-w-max w-auto bg-primary-500 text-black px-6 py-3 rounded-lg hover:bg-primary-400 text-lg transition-all">
                                     Let's get in touch
                                 </Link>
                             </div>
@@ -79,7 +79,7 @@ export default function Home() {
                             <p className="text-sm">Express, Golang, FastAPI and more</p>
                         </div>
                         <div
-                            className="absolute -bottom-10 lg:bottom-10 right-0 lg:right-10  bg-red-200  px-4 py-2 rounded-md shadow-lg">
+                            className="absolute -bottom-10 lg:bottom-10 right-0 lg:right-10  bg-primary-200  px-4 py-2 rounded-md shadow-lg">
                             <div className="font-normal">Databases</div>
                             <p className="text-sm">PostgreSQL, MongoDB, Firebase and more</p>
                         </div>
