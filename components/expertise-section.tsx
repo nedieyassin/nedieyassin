@@ -32,16 +32,16 @@ export default function ExpertiseSection() {
                 <h1 className="text-5xl text-slate-800">Expertise</h1>
                 <div>
                     <div className="grid lg:grid-cols-3 gap-6">
-                        <div className="space-y-2 bg-white p-6 border border-black/90">
+                        <div className="space-y-2 bg-white p-6 border rounded border-black/90">
                             <h1 className="text-xl font-bold text-slate-800">Website Development </h1>
                             <p>Craft visually stunning and functional websites that elevate your online presence.</p>
                         </div>
-                        <div className="space-y-2 bg-white p-6 border border-black/90">
+                        <div className="space-y-2 bg-white p-6 border rounded border-black/90">
                             <h1 className="text-xl font-bold text-slate-800">Web Application Development </h1>
                             <p>Build dynamic web applications tailored to your business needs for enhanced
                                 efficiency.</p>
                         </div>
-                        <div className="space-y-2 bg-white p-6 border border-black/90">
+                        <div className="space-y-2 bg-white p-6 border rounded border-black/90">
                             <h1 className="text-xl font-bold text-slate-800">Custom Web Solutions </h1>
                             <p>Tailored websites and web applications designed to meet your unique requirements and
                                 objectives.</p>
