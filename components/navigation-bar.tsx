@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import {motion, useCycle} from "framer-motion";
-import Scrollspy from 'react-scrollspy'
 import {useOutsideClick} from "@/lib/utils";
 import {useEffect} from "react";
 
@@ -42,6 +41,8 @@ const Path = (props: any) => (
 
 export function NavigationBar() {
     const [isOpen, toggleOpen] = useCycle(false, true);
+
+
     const ref = useOutsideClick(() => {
         if (isOpen) {
             toggleOpen();
@@ -66,7 +67,7 @@ export function NavigationBar() {
                     <motion.div
                         ref={ref}
                         animate={isOpen ? "open" : "closed"}
-                                className="flex items-center justify-center relative">
+                        className="flex items-center justify-center relative">
                         <button onClick={() => toggleOpen()}>
                             <svg width="23" height="23" viewBox="0 0 23 23">
                                 <Path
@@ -145,9 +146,7 @@ export function NavigationBar() {
                 </div>
                 <div className="hidden lg:block px-8">
                     <nav>
-                        <Scrollspy items={['expertise', 'education', 'experience', 'projects', 'contact']}
-                                   style={{display: 'flex', gap: '1.5rem', alignItems: 'center'}}
-                                   currentClassName="text-primary-500">
+                        <div>
                             {menus.map((menu, index) => (
                                 <li key={menu.title}>
                                     <Link
@@ -163,7 +162,7 @@ export function NavigationBar() {
                                     </Link>
                                 </li>
                             ))}
-                        </Scrollspy>
+                        </div>
                     </nav>
                 </div>
             </div>
