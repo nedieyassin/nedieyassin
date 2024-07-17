@@ -112,7 +112,7 @@ export function NavigationBar() {
                                     }
                                 }}
                                 className="flex flex-col gap-4">
-                                {menus.map((menu, index) => (
+                                {menus.map((menu) => (
                                     <motion.div
                                         key={menu.title}
                                         variants={{
@@ -146,9 +146,9 @@ export function NavigationBar() {
                 </div>
                 <div className="hidden lg:block px-8">
                     <nav>
-                        <div>
-                            {menus.map((menu, index) => (
-                                <li key={menu.title}>
+                        <div className="flex gap-3">
+                            {menus.map((menu) => (
+                                <li key={menu.title} className="list-none">
                                     <Link
                                         href={menu.href}
                                         onClick={(e) => {
