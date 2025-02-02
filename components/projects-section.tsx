@@ -1,55 +1,38 @@
 'use client'
 
-import {cn} from "@/lib/utils";
-import {DatabaseZap, LaptopMinimal, ServerCog} from "lucide-react";
-import {motion} from "framer-motion";
 import {useState} from "react";
 
 export default function ProjectsSection() {
     const [showMore, setShowMore] = useState(false)
     const projects = [
         {
-            title: 'Buy A Car Malawi',
-            description: 'Malawian car dealers marketplace for selling and buying cars.',
+            title: 'James Chiona School Management System',
+            description: 'Secondary School Management System for James Chiona Catholic High School.',
+            year: 2025,
+            technologies: ['React', 'Pocketbase', 'Tailwind CSS', 'TypeScript', 'Shadcn UI', 'Vite', 'Redis', 'Golang', 'Docker'],
+            url: 'https://jcchs.es.horizonlabsmw.com',
+        },
+        {
+            title: 'Horizon Labs',
+            description: 'Built website for horizon labs, an IT company i co-founded.',
             year: 2024,
-            technologies: ['React', 'Nextjs', 'Tailwind CSS', 'TypeScript', 'Shadcn UI', 'Vite', 'Pocketbase', 'Golang', 'Docker'],
-            url: 'https://buyacarmw.com',
+            technologies: ['React', 'Tailwind CSS', 'TypeScript', 'NextJS', 'Docker'],
+            url: 'https://horizonlabsmw.com'
         },
         {
             title: 'Techwiz',
             description: 'Quiz app for developers and tech enthusiasts.',
             year: 2024,
             technologies: ['React', 'Tailwind CSS', 'TypeScript', 'Framer Motion', 'Vite', 'Pocketbase', 'Golang', 'Docker'],
-            url: 'https://techwiz.up.railway.app'
-        },
-        {
-            title: 'Eazi Tickets',
-            description: 'Event management and ticketing web app.',
-            year: 2024,
-            technologies: ['Vue', 'Nuxt3', 'Tailwind CSS', 'TypeScript', 'NuxtUI', 'Vite', 'Pocketbase', 'Golang', 'Docker'],
-            url: 'https://eazitickets.com'
+            url: 'https://techwiz.nedieyassin.com'
         },
         {
             title: 'Ministry of Education - Teachers Management Information System',
             description: 'A web based system to manage the secondary school teachers which will support the education sector in different ways such as recruitment of professional teachers.',
             year: 2024,
-            technologies: ['Twig', 'Bootstrap', 'Guzzle', 'JavaScript'],
+            technologies: ['Twig', 'Bootstrap', 'Guzzle', 'JavaScript', 'PHP'],
             url: '',
             at: 'Agile Systems'
-        },
-        {
-            title: 'Nkhuku App',
-            description: 'Poultry farm management app.',
-            year: 2024,
-            technologies: ['React', 'Tailwind CSS', 'TypeScript', 'Shadcn UI', 'Vite', 'Pocketbase', 'Golang', 'Docker'],
-            url: 'https://nkhuku.up.railway.app'
-        },
-        {
-            title: 'Pocket Track',
-            description: 'A personal financial tracking web app.',
-            year: 2024,
-            technologies: ['Vue', 'Nuxt3', 'Tailwind CSS', 'TypeScript', 'NuxtUI', 'Vite', 'H3', 'PostgreSQL', 'Docker'],
-            url: 'https://nkhuku.up.railway.app'
         },
         {
             title: 'ECD Center Registration and Reporting System',

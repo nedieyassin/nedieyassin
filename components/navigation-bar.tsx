@@ -53,7 +53,7 @@ export function NavigationBar() {
         if (isOpen) {
             document.body.className += ' overflow-clip lg:overflow-auto';
         } else {
-            document.body.className = document.body.className.replaceAll(' overflow-clip lg:overflow-auto', '');
+            document.body.className = document.body.className.replaceAll('overflow-clip lg:overflow-auto', '');
         }
     }, [isOpen]);
 

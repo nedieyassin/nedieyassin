@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function ContactSection() {
 
     return (
-        <section id="contact" className="w-full bg-primary-900 text-white">
+        <section id="contact" className="w-full bg-black text-gray-200">
             <div className="container py-16 space-y-10">
                 <div className="space-y-3">
                     <h1 className="text-5xl">Let's get in touch</h1>
@@ -19,49 +19,49 @@ export default function ContactSection() {
 
                     {/**/}
                     <Link href="mailto:yassinnedie9121@gmail.com" target="_blank"
-                          className="group flex gap-x-3 border-2 border-primary-700 p-4 rounded-2xl">
+                          className="group flex gap-x-3 border-2 border-gray-800 p-4 rounded-2xl">
                         <div
-                            className="bg-white flex items-center justify-center h-14 aspect-square p-3 rounded-md max-w-max text-primary-900">
+                            className="bg-gray-800 flex items-center justify-center h-14 aspect-square p-3 rounded-md max-w-max text-primary-400">
                             <MailCheck size={26}/>
                         </div>
                         <div>
-                            <h1>Email Address</h1>
+                            <h1 className="text-gray-400">Email Address</h1>
                             <p className="font-normal group-hover:underline text-lg">yassinnedie9121@gmail.com</p>
                         </div>
                     </Link>
                     {/**/}
                     <Link href="https://github.com/nedieyassin" target="_blank"
-                          className="group flex gap-x-3 border-2 border-primary-700 p-4 rounded-2xl">
+                          className="group flex gap-x-3 border-2 border-gray-800 p-4 rounded-2xl">
                         <div
-                            className="bg-white flex items-center justify-center h-14 aspect-square p-3 rounded-md max-w-max text-primary-900">
+                            className="bg-gray-800 flex items-center justify-center h-14 aspect-square p-3 rounded-md max-w-max text-primary-400">
                             <Github size={26}/>
                         </div>
                         <div>
-                            <h1>GitHub</h1>
+                            <h1 className="text-gray-400">GitHub</h1>
                             <p className="font-normal group-hover:underline text-lg">nedieyassin</p>
                         </div>
                     </Link>
                     {/**/}
                     <Link href="https://www.linkedin.com/in/yassin-nedie" target="_blank"
-                          className="group flex gap-x-3 border-2 border-primary-700 p-4 rounded-2xl">
+                          className="group flex gap-x-3 border-2 border-gray-800 p-4 rounded-2xl">
                         <div
-                            className="bg-white flex items-center justify-center h-14 aspect-square p-3 rounded-md max-w-max text-primary-900">
+                            className="bg-gray-800 flex items-center justify-center h-14 aspect-square p-3 rounded-md max-w-max text-primary-400">
                             <Linkedin size={26}/>
                         </div>
                         <div>
-                            <h1>LinkedIn</h1>
+                            <h1 className="text-gray-400">LinkedIn</h1>
                             <p className="font-normal group-hover:underline text-lg line-clamp-1">yassin-nedie</p>
                         </div>
                     </Link>
                     {/**/}
                     <Link href="https://wa.me/265998046884" target="_blank"
-                          className="group flex gap-x-3 border-2 border-primary-700 p-4 rounded-2xl">
+                          className="group flex gap-x-3 border-2 border-gray-800 p-4 rounded-2xl">
                         <div
-                            className="bg-white flex items-center justify-center h-14 aspect-square p-3 rounded-md max-w-max text-primary-900">
+                            className="bg-gray-800 flex items-center justify-center h-14 aspect-square p-3 rounded-md max-w-max text-primary-400">
                             <PhoneCall size={26}/>
                         </div>
                         <div>
-                            <h1>Phone Call and WhatsApp</h1>
+                            <h1 className="text-gray-400">Phone Call and WhatsApp</h1>
                             <p className="font-normal group-hover:underline text-lg">+265 (0) 998 046 884</p>
                         </div>
                     </Link>

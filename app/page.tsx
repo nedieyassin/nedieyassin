@@ -76,12 +76,12 @@ export default function Home() {
                         <div
                             className="absolute bottom-14 lg:bottom-28 left-0  bg-orange-200  px-4 py-2 rounded-md shadow-lg">
                             <div className="font-normal">Backend Development</div>
-                            <p className="text-sm">Express, Golang, FastAPI and more</p>
+                            <p className="text-sm">Express, Golang, Hono and more</p>
                         </div>
                         <div
                             className="absolute -bottom-10 lg:bottom-10 right-0 lg:right-10  bg-primary-200  px-4 py-2 rounded-md shadow-lg">
                             <div className="font-normal">Databases</div>
-                            <p className="text-sm">PostgreSQL, MongoDB, Firebase and more</p>
+                            <p className="text-sm">PostgreSQL, SQLite, MySQL and more</p>
                         </div>
                     </div>
                 </div>

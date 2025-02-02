@@ -39,8 +39,8 @@ export const metadata: Metadata = {
         images: [
             {
                 url: "https://nedieyassin.com/og.png",
-                width: 512,
-                height: 512,
+                width: 128,
+                height: 128,
             },
         ],
         locale: "en-US",
