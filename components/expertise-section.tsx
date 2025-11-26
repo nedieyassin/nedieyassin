@@ -10,19 +10,19 @@ export default function ExpertiseSection() {
     const [currentExpertise, setCurrentExpertise] = useState(0)
     const expertise = [
         {
-            title: 'Frontend Development',
-            description: 'Specializing in front-end development, I meticulously design and build user interfaces that captivate and engage. Leveraging the latest technologies and best practices, I ensure seamless functionality across devices and browsers, delivering intuitive experiences that leave a lasting impression.',
-            technologies: ['React', 'Vue', 'Next.js', 'Nuxt3', 'Tailwind CSS', 'Shadcn UI', 'Material UI', 'Vuetify', 'Framer Motion', 'Vite', 'Docker']
-        },
-        {
             title: 'Backend Development',
             description: 'In back-end development, I architect robust systems that power seamless user experiences. From database management to server-side logic, I ensure the backbone of your application operates efficiently and securely. With a focus on scalability and performance, I craft solutions that evolve with your business needs.',
-            technologies: ['Express', 'H3', 'FastAPI', 'Echo', 'Node.js', 'Golang', 'PHP', 'Flask', 'Laravel', 'Docker']
+            technologies: ['Express', 'Hono', 'FastAPI', 'Echo', 'Node.js', 'Golang', 'PHP', 'Flask', 'Laravel', 'Docker']
         },
         {
             title: 'Database',
             description: 'In database management, I design and optimize data structures that form the foundation of your application. From relational databases to NoSQL solutions, I implement efficient storage and retrieval mechanisms to ensure data integrity and performance. With a keen eye for scalability and security, I build resilient database architectures that support your application\'s growth and reliability.',
             technologies: ['PostgreSQL', 'MongoDB', 'Firebase', 'Supabase', 'MySQL', 'Pocketbase', 'SQLite', 'Docker']
+        },
+        {
+            title: 'Frontend Development',
+            description: 'Specializing in front-end development, I meticulously design and build user interfaces that captivate and engage. Leveraging the latest technologies and best practices, I ensure seamless functionality across devices and browsers, delivering intuitive experiences that leave a lasting impression.',
+            technologies: ['React', 'Vue', 'Next', 'Nuxt3', 'Tailwind CSS', 'Shadcn UI', 'Material UI', 'Vuetify', 'Framer Motion', 'Vite', 'Docker']
         },
     ]
 
@@ -51,40 +51,41 @@ export default function ExpertiseSection() {
                 <div>
                     <div className="grid lg:grid-cols-2 lg:gap-10">
                         <div className="lg:py-6 space-y-1">
+
                             <div className="relative">
                                 <button
                                     onClick={() => setCurrentExpertise(0)}
-                                    className={cn("relative z-10 w-full border border-transparent  transition-all hover:text-sky-500 cursor-pointer rounded flex items-center gap-6 px-6 py-6", currentExpertise === 0 && "bg-white border-primary-500")}>
-                                    <LaptopMinimal className="text-sky-500" strokeWidth={0.9} size={32}/>
-                                    <span className="text-xl font-normal">Frontend Development</span>
-                                </button>
-                                {currentExpertise === 0 &&
-                                    <motion.div
-                                        className="h-24 w-24 -top-4 z-[0] -left-8  rounded-full bg-sky-100 absolute"
-                                        layoutId="underline"/>}
-                            </div>
-                            <div className="relative">
-                                <button
-                                    onClick={() => setCurrentExpertise(1)}
-                                    className={cn("relative z-10 w-full border border-transparent  transition-all hover:text-orange-500 cursor-pointer rounded flex items-center gap-6 px-6 py-6", currentExpertise === 1 && "bg-white border-primary-500")}>
+                                    className={cn("relative z-10 w-full border border-transparent  transition-all hover:text-orange-500 cursor-pointer rounded flex items-center gap-6 px-6 py-6", currentExpertise === 0 && "bg-white border-primary-500")}>
                                     <ServerCog className="text-orange-500" strokeWidth={0.9} size={32}/>
                                     <span className="text-xl font-normal">Backend Development</span>
                                 </button>
-                                {currentExpertise === 1 &&
+                                {currentExpertise === 0 &&
                                     <motion.div
                                         className="h-24 w-24 -top-4 z-[0] -left-8  rounded-full bg-orange-100 absolute"
                                         layoutId="underline"/>}
                             </div>
                             <div className="relative">
                                 <button
-                                    onClick={() => setCurrentExpertise(2)}
-                                    className={cn("relative z-10 w-full border border-transparent  transition-all hover:text-primary-500 cursor-pointer rounded flex items-center gap-6 px-6 py-6", currentExpertise === 2 && "bg-white border-primary-500")}>
+                                    onClick={() => setCurrentExpertise(1)}
+                                    className={cn("relative z-10 w-full border border-transparent  transition-all hover:text-primary-500 cursor-pointer rounded flex items-center gap-6 px-6 py-6", currentExpertise === 1 && "bg-white border-primary-500")}>
                                     <DatabaseZap className="text-primary-500" strokeWidth={0.9} size={32}/>
                                     <span className="text-xl font-normal">Databases</span>
                                 </button>
-                                {currentExpertise === 2 &&
+                                {currentExpertise === 1 &&
                                     <motion.div
                                         className="h-24 w-24 -top-4 z-[0] -left-8  rounded-full bg-primary-100 absolute"
+                                        layoutId="underline"/>}
+                            </div>
+                            <div className="relative">
+                                <button
+                                    onClick={() => setCurrentExpertise(2)}
+                                    className={cn("relative z-10 w-full border border-transparent  transition-all hover:text-sky-500 cursor-pointer rounded flex items-center gap-6 px-6 py-6", currentExpertise === 2 && "bg-white border-primary-500")}>
+                                    <LaptopMinimal className="text-sky-500" strokeWidth={0.9} size={32}/>
+                                    <span className="text-xl font-normal">Frontend Development</span>
+                                </button>
+                                {currentExpertise === 2 &&
+                                    <motion.div
+                                        className="h-24 w-24 -top-4 z-[0] -left-8  rounded-full bg-sky-100 absolute"
                                         layoutId="underline"/>}
                             </div>
                         </div>

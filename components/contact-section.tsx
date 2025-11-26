@@ -1,9 +1,6 @@
 'use client'
 
-import {cn} from "@/lib/utils";
-import {DatabaseZap, Github, LaptopMinimal, Linkedin, MailCheck, PhoneCall, ServerCog} from "lucide-react";
-import {motion} from "framer-motion";
-import {useState} from "react";
+import {Github, MailCheck, PhoneCall} from "lucide-react";
 import Link from "next/link";
 
 export default function ContactSection() {
@@ -42,17 +39,17 @@ export default function ContactSection() {
                         </div>
                     </Link>
                     {/**/}
-                    <Link href="https://www.linkedin.com/in/yassin-nedie" target="_blank"
-                          className="group flex gap-x-3 border-2 border-gray-800 p-4 rounded-2xl">
-                        <div
-                            className="bg-gray-800 flex items-center justify-center h-14 aspect-square p-3 rounded-md max-w-max text-primary-400">
-                            <Linkedin size={26}/>
-                        </div>
-                        <div>
-                            <h1 className="text-gray-400">LinkedIn</h1>
-                            <p className="font-normal group-hover:underline text-lg line-clamp-1">yassin-nedie</p>
-                        </div>
-                    </Link>
+                    {/*<Link href="https://www.linkedin.com/in/yassin-nedie" target="_blank"*/}
+                    {/*      className="group flex gap-x-3 border-2 border-gray-800 p-4 rounded-2xl">*/}
+                    {/*    <div*/}
+                    {/*        className="bg-gray-800 flex items-center justify-center h-14 aspect-square p-3 rounded-md max-w-max text-primary-400">*/}
+                    {/*        <Linkedin size={26}/>*/}
+                    {/*    </div>*/}
+                    {/*    <div>*/}
+                    {/*        <h1 className="text-gray-400">LinkedIn</h1>*/}
+                    {/*        <p className="font-normal group-hover:underline text-lg line-clamp-1">yassin-nedie</p>*/}
+                    {/*    </div>*/}
+                    {/*</Link>*/}
                     {/**/}
                     <Link href="https://wa.me/265998046884" target="_blank"
                           className="group flex gap-x-3 border-2 border-gray-800 p-4 rounded-2xl">

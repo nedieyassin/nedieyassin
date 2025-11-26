@@ -4,11 +4,19 @@ export default function ExperienceSection() {
 
     const education = [
         {
+            title: "Chief Technology Officer (CTO) - Remote",
+            description: 'Horizon Labs Malawi, Malawi',
+            date: ['2024', 'Present']
+        },
+
+        {
             title: "Senior Frontend Engineer",
             description: 'Agile Systems, Malawi',
             date: ['2020', 'Present']
         },
     ]
+
+
     return (
         <section id="experience" className="container relative py-16 space-y-10">
 

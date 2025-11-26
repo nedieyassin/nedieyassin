@@ -36,7 +36,7 @@ export default function Home() {
                                 I develop digital
                                 experiences, from front-end finesse to back-end brilliance.
                             </h1>
-                            <div className="pb-10 lg:pb-0">
+                            <div className="pb-10 space-y-6 lg:pb-0">
                                 <Link href={"#contact"}
                                       onClick={(e) => {
                                           e.preventDefault()
@@ -45,6 +45,11 @@ export default function Home() {
                                       }}
                                       className="block text-center  max-w-full lg:max-w-max w-auto bg-primary-500 text-black px-6 py-3 rounded-lg hover:bg-primary-400 text-lg transition-all">
                                     Let's get in touch
+                                </Link>
+
+                                <Link href={"yassin-nedie-software-developer.pdf"} target={"_blank"}
+                                      className="block text-center  max-w-full lg:max-w-max w-auto border border-primary-500   text-black px-6 py-3 rounded-lg hover:bg-gray-50 text-lg transition-all">
+                                    Download Resume
                                 </Link>
                             </div>
                         </div>
