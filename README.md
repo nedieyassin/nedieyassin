@@ -3,10 +3,6 @@
 
 # Nedie Yassin - Full Stack Developer
 
-Welcome to my GitHub profile! I'm a passionate Full Stack Developer with expertise in building scalable web applications, mobile solutions, and cloud-based systems. I love creating elegant solutions to complex problems and contributing to open-source projects.
-
----
-
 ## About Me
 
 I'm a full-stack developer proficient in modern technologies across the entire development stack. Currently pursuing a Bachelor of Science in Software Development at Brigham Young University–Idaho, and working as a Senior Frontend Engineer at Agile Systems, Malawi. I specialize in building:
