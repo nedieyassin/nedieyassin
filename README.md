@@ -1,5 +1,5 @@
 # 💫 About Me:
- Full-stack Dev
+Nedie Nedie is a Full Stack Developer proficient in Typescript, React, NextJS, Vue, NuxtJS, Node, Python, Go, Express, PostgreSQL, MySQL, Prisma, TailwindCSS, FastAPI, PHP, Twig, Flutter, Firebase, Git, GitHub, and Docker. Explore his website to see his projects and experience.
 
 
 ## 🌐 Socials:
