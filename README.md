@@ -1,3 +1,6 @@
+![](https://github.com/nedieyassin/nedieyassin/blob/master/public/nedie-yassin.jpeg)
+
+
 # Nedie Yassin - Full Stack Developer
 
 Welcome to my GitHub profile! I'm a passionate Full Stack Developer with expertise in building scalable web applications, mobile solutions, and cloud-based systems. I love creating elegant solutions to complex problems and contributing to open-source projects.
