@@ -68,7 +68,6 @@ I'm a full-stack developer proficient in modern technologies across the entire d
 
 I'm always interested in collaborating on interesting projects and connecting with fellow developers. Feel free to reach out!
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yassin-nedie)
 [![X (Twitter)](https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=X&logoColor=white)](https://x.com/nedieyassin)
 [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nedieyassin)
 [![Website](https://img.shields.io/badge/Website-%23000000.svg?style=for-the-badge&logo=google-chrome&logoColor=white)](https://nedieyassin.com)
