@@ -9,7 +9,7 @@ Welcome to my GitHub profile! I'm a passionate Full Stack Developer with experti
 
 ## About Me
 
-I'm a full-stack developer proficient in modern technologies across the entire development stack. Currently pursuing a Bachelor of Science in Software Engineering at Brigham Young University–Idaho, and working as a Senior Frontend Engineer at Agile Systems, Malawi. I specialize in building:
+I'm a full-stack developer proficient in modern technologies across the entire development stack. Currently pursuing a Bachelor of Science in Software Development at Brigham Young University–Idaho, and working as a Senior Frontend Engineer at Agile Systems, Malawi. I specialize in building:
 
 - Web Applications (React, Next.js, Vue, Nuxt.js)
 - Backend Services (Node.js, Express, Go, Hono, FastAPI)
