@@ -59,10 +59,6 @@ I'm a full-stack developer proficient in modern technologies across the entire d
 
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=nedieyassin&mode=weekly&theme=radical)](https://git.io/streak-stats)
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=nedieyassin&theme=radical&hide_border=false&include_all_commits=true&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=nedieyassin&theme=radical&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
-
 ---
 
 ## Connect With Me
